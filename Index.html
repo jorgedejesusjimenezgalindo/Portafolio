@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Jiménez Galindo - Desarrollador web E-Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #333; /* Color de texto principal */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: #222; /* Color de títulos */
+        }
+        .text-accent {
+            color: #6B46C1; /* Un color de acento morado sutil */
+        }
+        .bg-accent {
+            background-color: #6B46C1;
+        }
+        .border-accent {
+            border-color: #6B46C1;
+        }
+        .hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 antialiased">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800 tracking-tight">Jorge de Jesús Jiménez Galindo <span class="text-accent">.</span></a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#hero" class="text-gray-600 hover:text-accent transition duration-300">Inicio</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-accent transition duration-300">Sobre Mí</a></li>
+                <li><a href="#experience" class="text-gray-600 hover:text-accent transition duration-300">Experiencia</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-accent transition duration-300">Proyectos</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-accent transition duration-300">Contacto</a></li>
+            </ul>
+            <button class="md:hidden text-gray-600 hover:text-accent focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="bg-gradient-to-r from-gray-100 to-white py-20 md:py-32 text-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">
+                    Desarrollador E-Commerce <br class="hidden sm:inline"> & Estratega Digital
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8">
+                    Especialista en desarrollo y optimización de tiendas virtuales, impulsando el crecimiento de marcas a través de plataformas líderes.
+                </p>
+                <a href="#projects" class="inline-block bg-accent text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-purple-700 transition duration-300">
+                    Ver Proyectos
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Sobre Mí</h2>
+                <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                    <div class="md:w-1/3 mb-8 md:mb-0">
+                        <img src="https://placehold.co/300x300/E0E0E0/333333?text=Tu+Foto" alt="Tu Foto de Perfil" class="rounded-full w-48 h-48 md:w-64 md:h-64 mx-auto object-cover shadow-lg">
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <p class="text-lg leading-relaxed mb-6">
+                            Soy un apasionado desarrollador web con un enfoque profundo en el ecosistema del e-commerce. Mi objetivo es transformar ideas en soluciones de comercio electrónico robustas y atractivas, asegurando que cada tienda virtual no solo funcione a la perfección, sino que también impulse las ventas y la experiencia del usuario.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            Con experiencia en la gestión y desarrollo de plataformas como Shopify, Woocommerce, Magento y Vtex, combino habilidades técnicas con una visión estratégica para optimizar cada aspecto de la tienda online, desde el código hasta la conversión.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4 max-w-5xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Mi Experiencia</h2>
+
+                <div class="bg-white rounded-lg shadow-md p-8 mb-8 hover-effect transition duration-300">
+                    <h3 class="text-2xl font-bold text-accent mb-2">E-Commerce Manager</h3>
+                    <p class="text-gray-600 mb-4">(febrero 2020 – septiembre 2022) | P1stache. Agencia de Marketing</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Manejo de tiendas de diferentes marcas simultáneamente en Shopify y sitios en Wordpress.</li>
+                        <li>Edición backend y frontend del sitio, como carga de assets y ajustes de estructura con código Liquid, HTML, CSS, JavaScript, PHP.</li>
+                        <li>Análisis de productos, más vendidos, carritos abandonados, etc.</li>
+                        <li>Depuración de catálogos.</li>
+                        <li>Estrategias de descuentos.</li>
+                        <li>Campañas Hot Sale, Black Friday, Cyber Monday.</li>
+                        <li>Coordinación con equipo de Diseño y Desarrollo para ajustes de front end.</li>
+                        <li>Actualización de catálogo.</li>
+                    </ul>
+                    <h4 class="font-semibold mt-6 mb-2">Tiendas trabajadas:</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <a href="https://rodin.mx/" target="_blank" class="text-blue-600 hover:underline">Rodin</a>
+                        <a href="https://jarking.com/" target="_blank" class="text-blue-600 hover:underline">Jarking</a>
+                        <a href="https://www.nutreaunnino.org.mx/" target="_blank" class="text-blue-600 hover:underline">Nutre a un niño</a>
+                        <a href="https://reli.com.mx/" target="_blank" class="text-blue-600 hover:underline">Red de librerías independientes</a>
+                        <a href="https://www.soleada.com.mx/" target="_blank" class="text-blue-600 hover:underline">Soleada</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-8 mb-8 hover-effect transition duration-300">
+                    <h3 class="text-2xl font-bold text-accent mb-2">Desarrollador E-Commerce</h3>
+                    <p class="text-gray-600 mb-4">(octubre 2022 – julio 2024) | Entropy. Agencia de marketing</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Creación y rediseño de tiendas Shopify, Woocommerce, Magento, Vtex.</li>
+                        <li>Edición backend y frontend del sitio, como carga de assets y ajustes de estructura con código Liquid, HTML, CSS, JavaScript, PHP.</li>
+                        <li>Configuración de cuentas en Google Analytics.</li>
+                        <li>Migración de cuentas de Google Analytics a Google Analytics 4.</li>
+                        <li>Configuración de embudos de conversión.</li>
+                        <li>Configuración de Eventos en Google Tag Manager.</li>
+                        <li>Eventos personalizados con DataLayer en Google Tag Manager.</li>
+                        <li>Integración y configuración de píxeles: Facebook, Instagram, TikTok, etc.</li>
+                        <li>Campañas Hot Sale, Black Friday, Cyber Monday.</li>
+                        <li>Migración de tiendas.</li>
+                    </ul>
+                    <h4 class="font-semibold mt-6 mb-2">Tiendas trabajadas:</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <a href="https://www.idolbeauty.com.mx/" target="_blank" class="text-blue-600 hover:underline">Idol beauty</a>
+                        <a href="https://www.doto.com.mx/" target="_blank" class="text-blue-600 hover:underline">Doto</a>
+                        <a href="https://www.elpalaciodehierro.com/" target="_blank" class="text-blue-600 hover:underline">Palacio de hierro</a>
+                        <a href="https://waldos.com.mx/" target="_blank" class="text-blue-600 hover:underline">Waldos</a>
+                        <a href="https://etuali.com/" target="_blank" class="text-blue-600 hover:underline">Etuali diamantes</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-8 mb-8 hover-effect transition duration-300">
+                    <h3 class="text-2xl font-bold text-accent mb-2">Implementador WordPress</h3>
+                    <p class="text-gray-600 mb-4">(Septiembre 2024 – Diciembre 2024) | Phidev. Agencia de marketing</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Personalizar sitios WordPress con PHP, Javascript, HTML y CSS.</li>
+                        <li>Configuración de plugins.</li>
+                        <li>Configuración custom de plugins mediante Javascript.</li>
+                        <li>Carga de assets.</li>
+                        <li>Creación y configuración de Popup custom.</li>
+                        <li>Creación y configuración de contact forms custom.</li>
+                        <li>Configuración de slides con Revolution Slider.</li>
+                        <li>Ajustes de sitio mediante Elementor, Bakery Page Builder, etc.</li>
+                        <li>Instalación de WordPress en servidor desde cero.</li>
+                        <li>Optimizar sitio en SEO.</li>
+                        <li>Instalación y configuración custom de themes.</li>
+                        <li>Mantener rendimiento óptimo del sitio.</li>
+                    </ul>
+                    <h4 class="font-semibold mt-6 mb-2">Páginas trabajadas:</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <a href="https://audisatt.com/" target="_blank" class="text-blue-600 hover:underline">Audisat</a>
+                        <a href="https://employmentlawbrettduke.com/" target="_blank" class="text-blue-600 hover:underline">Brett Duke</a>
+                        <a href="https://texasmedicalcareplans.com/en/home/" target="_blank" class="text-blue-600 hover:underline">Texas medical care plans</a>
+                        <a href="https://phidev.com/es/project/lucky-little-cat-es" target="_blank" class="text-blue-600 hover:underline">Lucky little cat</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-8 hover-effect transition duration-300">
+                    <h3 class="text-2xl font-bold text-accent mb-2">Actualmente desarrollando:</h3>
+                    <p class="text-gray-600 mb-4">
+                        <a href="https://subastasenlineamexico.com/" target="_blank" class="text-blue-600 hover:underline">Subastas en línea México</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Proyectos Destacados</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=Rodin" alt="Captura de pantalla de Rodin" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Rodin</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: Shopify</p>
+                            <p class="text-gray-700 mb-4">Manejo y optimización de la tienda Shopify, incluyendo ajustes de código Liquid y estrategias de descuentos.</p>
+                            <a href="https://rodin.mx/" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=Jarking" alt="Captura de pantalla de Jarking" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Jarking</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: Shopify</p>
+                            <p class="text-gray-700 mb-4">Gestión integral de la tienda online, depuración de catálogos y coordinación de campañas de venta.</p>
+                            <a href="https://jarking.com/" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=Nutre+a+un+niño" alt="Captura de pantalla de Nutre a un niño" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Nutre a un niño</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: Shopify</p>
+                            <p class="text-gray-700 mb-4">Manejo de la tienda, análisis de rendimiento y ajustes de estructura para una mejor experiencia de usuario.</p>
+                            <a href="https://www.nutreaunnino.org.mx/" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=RELI" alt="Captura de pantalla de RELI" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Red de Librerías Independientes (RELI)</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: Shopify</p>
+                            <p class="text-gray-700 mb-4">Actualización de catálogo, estrategias de descuentos y coordinación de ajustes de front-end.</p>
+                            <a href="https://reli.com.mx/" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=Soleada" alt="Captura de pantalla de Soleada" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Soleada</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: Shopify</p>
+                            <p class="text-gray-700 mb-4">Análisis de productos, carritos abandonados y optimización del sitio para campañas especiales.</p>
+                            <a href="https://www.soleada.com.mx/" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=Idol+Beauty" alt="Captura de pantalla de Idol Beauty" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Idol Beauty</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: Shopify</p>
+                            <p class="text-gray-700 mb-4">Creación y rediseño de la tienda, configuración de Google Analytics 4 y eventos en GTM.</p>
+                            <a href="https://www.idolbeauty.com.mx/" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=Doto" alt="Captura de pantalla de Doto" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Doto</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: Woocommerce</p>
+                            <p class="text-gray-700 mb-4">Configuración de embudos de conversión y migración de tiendas para optimizar el rendimiento.</p>
+                            <a href="https://www.doto.com.mx/" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=Palacio+de+Hierro" alt="Captura de pantalla de Palacio de Hierro" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Palacio de Hierro</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: Vtex</p>
+                            <p class="text-gray-700 mb-4">Integración y configuración de píxeles (Facebook, Instagram) para campañas de marketing.</p>
+                            <a href="https://www.elpalaciodehierro.com/" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=Waldos" alt="Captura de pantalla de Waldos" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Waldos</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: Magento</p>
+                            <p class="text-gray-700 mb-4">Desarrollo y optimización de la tienda, incluyendo eventos personalizados con DataLayer.</p>
+                            <a href="https://waldos.com.mx/" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=Etuali+Diamantes" alt="Captura de pantalla de Etuali Diamantes" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Etuali Diamantes</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: Shopify</p>
+                            <p class="text-gray-700 mb-4">Ajustes de estructura y código Liquid para una experiencia de compra premium.</p>
+                            <a href="https://etuali.com/" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=Audisat" alt="Captura de pantalla de Audisat" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Audisat</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: WordPress</p>
+                            <p class="text-gray-700 mb-4">Personalización del sitio WordPress con PHP, JavaScript, HTML y CSS, y configuración de plugins.</p>
+                            <a href="https://audisatt.com/" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=Brett+Duke" alt="Captura de pantalla de Brett Duke" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Brett Duke</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: WordPress</p>
+                            <p class="text-gray-700 mb-4">Creación y configuración de formularios de contacto custom y optimización SEO del sitio.</p>
+                            <a href="https://employmentlawbrettduke.com/" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=Texas+Medical" alt="Captura de pantalla de Texas Medical Care Plans" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Texas Medical Care Plans</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: WordPress</p>
+                            <p class="text-gray-700 mb-4">Instalación y configuración custom de temas, y mantenimiento del rendimiento óptimo del sitio.</p>
+                            <a href="https://texasmedicalcareplans.com/en/home/" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=Lucky+Little+Cat" alt="Captura de pantalla de Lucky Little Cat" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Lucky Little Cat</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: WordPress</p>
+                            <p class="text-gray-700 mb-4">Ajustes de sitio mediante Page Builders y configuración de sliders con Revolution Slider.</p>
+                            <a href="https://phidev.com/es/project/lucky-little-cat-es" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-effect transition duration-300">
+                        <img src="https://placehold.co/600x400/E0E0E0/333333?text=Subastas+online" alt="Captura de pantalla de Subastas en línea México" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Subastas en línea México</h3>
+                            <p class="text-gray-600 text-sm mb-2">Plataforma: En desarrollo</p>
+                            <p class="text-gray-700 mb-4">Proyecto actual de desarrollo de una plataforma de subastas en línea.</p>
+                            <a href="https://subastasenlineamexico.com/" target="_blank" class="text-accent hover:underline font-semibold">Ver Proyecto &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4 max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Hablemos de tu Próximo Proyecto</h2>
+                <p class="text-lg text-gray-700 text-center mb-8">
+                    Listo para impulsar tu negocio online. ¡Contáctame y empecemos a construir algo grande!
+                </p>
+                <form class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="mb-6">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="tu.email@ejemplo.com" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Mensaje:</label>
+                        <textarea id="message" name="message" rows="6" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-accent text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-purple-700 transition duration-300">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-12 text-center text-gray-700">
+                    <p class="mb-2">Email: <a href="mailto:tu.email@ejemplo.com" class="text-accent hover:underline">tu.email@ejemplo.com</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/tuperfil" target="_blank" class="text-accent hover:underline">linkedin.com/in/tuperfil</a></p>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+            <p class="text-gray-400">Diseñado y Desarrollado con pasión.</p>
+            </div>
+    </footer>
+
+</body>
+</html>
