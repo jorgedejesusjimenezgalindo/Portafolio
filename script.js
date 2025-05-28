@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Funcionalidad de Desplazamiento Suave (Smooth Scrolling) ---
     // Selecciona todos los enlaces de navegación que apuntan a una sección de la página
-    document.querySelectorAll('a[href^="#hero","#about","#contact"]').forEach(anchor => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault(); // Previene el comportamiento de salto por defecto del enlace
 
