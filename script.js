@@ -1,18 +1,18 @@
-// Espera a que el DOM esté completamente cargado antes de ejecutar el script
+// Espera a que el DOM estÃ© completamente cargado antes de ejecutar el script
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Funcionalidad del Menú de Navegación Móvil (Hamburguesa) ---
-    const mobileMenuButton = document.querySelector('header button'); // Selecciona el botón del menú hamburguesa
-    const navLinksContainer = document.querySelector('header ul'); // Selecciona el contenedor de los enlaces de navegación
+    // --- Funcionalidad del MenÃº de NavegaciÃ³n MÃ³vil (Hamburguesa) ---
+    const mobileMenuButton = document.querySelector('header button'); // Selecciona el botÃ³n del menÃº hamburguesa
+    const navLinksContainer = document.querySelector('header ul'); // Selecciona el contenedor de los enlaces de navegaciÃ³n
 
-    // Verifica si ambos elementos existen antes de añadir el event listener
+    // Verifica si ambos elementos existen antes de aÃ±adir el event listener
     if (mobileMenuButton && navLinksContainer) {
         mobileMenuButton.addEventListener('click', () => {
-            // Alterna la clase 'hidden' para mostrar u ocultar el menú de navegación
-            // Esto lo hace visible/invisible en pantallas pequeñas, ya que Tailwind lo oculta por defecto en md:
+            // Alterna la clase 'hidden' para mostrar u ocultar el menÃº de navegaciÃ³n
+            // Esto lo hace visible/invisible en pantallas pequeÃ±as, ya que Tailwind lo oculta por defecto en md:
             navLinksContainer.classList.toggle('hidden');
-            navLinksContainer.classList.toggle('flex'); // Para asegurar que se muestre como flexbox cuando esté visible
-            navLinksContainer.classList.toggle('flex-col'); // Para apilar los elementos verticalmente en móvil
+            navLinksContainer.classList.toggle('flex'); // Para asegurar que se muestre como flexbox cuando estÃ© visible
+            navLinksContainer.classList.toggle('flex-col'); // Para apilar los elementos verticalmente en mÃ³vil
             navLinksContainer.classList.toggle('absolute'); // Posicionamiento absoluto
             navLinksContainer.classList.toggle('top-16'); // Debajo del header
             navLinksContainer.classList.toggle('left-0'); // Alineado a la izquierda
@@ -24,12 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinksContainer.classList.toggle('items-center'); // Centra los elementos
         });
 
-        // Cierra el menú móvil cuando se hace clic en un enlace (para mejorar la UX)
+        // Cierra el menÃº mÃ³vil cuando se hace clic en un enlace (para mejorar la UX)
         navLinksContainer.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 if (!navLinksContainer.classList.contains('hidden')) {
                     navLinksContainer.classList.add('hidden');
-                    // Remueve las clases añadidas para mostrarlo
+                    // Remueve las clases aÃ±adidas para mostrarlo
                     navLinksContainer.classList.remove('flex', 'flex-col', 'absolute', 'top-16', 'left-0', 'w-full', 'bg-white', 'shadow-md', 'py-4', 'space-y-4', 'items-center');
                 }
             });
@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Funcionalidad de Desplazamiento Suave (Smooth Scrolling) ---
-    // Selecciona todos los enlaces de navegación que apuntan a una sección de la página
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    // Selecciona todos los enlaces de navegaciÃ³n que apuntan a una secciÃ³n de la pÃ¡gina
+    document.querySelectorAll('a[href^="#hero","#about","#contact"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault(); // Previene el comportamiento de salto por defecto del enlace
 
@@ -48,27 +48,27 @@ document.addEventListener('DOMContentLoaded', () => {
             if (targetElement) {
                 // Desplaza la vista al elemento destino de forma suave
                 window.scrollTo({
-                    top: targetElement.offsetTop - (document.querySelector('header').offsetHeight), // Ajusta para el tamaño del header fijo
+                    top: targetElement.offsetTop - (document.querySelector('header').offsetHeight), // Ajusta para el tamaÃ±o del header fijo
                     behavior: 'smooth' // Habilita el desplazamiento suave
                 });
             }
         });
     });
 
-    // --- Opcional: Manejo básico del formulario de contacto (solo frontend) ---
+    // --- Opcional: Manejo bÃ¡sico del formulario de contacto (solo frontend) ---
     const contactForm = document.querySelector('#contact form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Previene el envío por defecto del formulario
+            e.preventDefault(); // Previene el envÃ­o por defecto del formulario
 
-            // Aquí podrías añadir lógica para:
+            // AquÃ­ podrÃ­as aÃ±adir lÃ³gica para:
             // 1. Validar los campos del formulario.
             // 2. Mostrar un mensaje de "enviando..." al usuario.
             // 3. Enviar los datos del formulario a un servicio de backend (ej. Fetch API a un endpoint).
-            //    Para este ejemplo, solo mostraremos un mensaje de éxito simulado.
+            //    Para este ejemplo, solo mostraremos un mensaje de Ã©xito simulado.
 
-            alert('¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.'); // Usar modal personalizado en un entorno real
-            this.reset(); // Limpia el formulario después del "envío"
+            alert('Â¡Mensaje enviado con Ã©xito! Me pondrÃ© en contacto contigo pronto.'); // Usar modal personalizado en un entorno real
+            this.reset(); // Limpia el formulario despuÃ©s del "envÃ­o"
         });
     }
 
